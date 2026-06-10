@@ -1,0 +1,68 @@
+.card {
+  background-color: var(--color-surface);
+  border: 3px solid var(--color-text);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  outline: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-pokered);
+}
+
+.number {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  color: var(--color-muted);
+  align-self: flex-start;
+  line-height: 1;
+}
+
+.imageWrapper {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 60%,
+    var(--color-bg) 60%,
+    var(--color-border) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.card:hover .image,
+.card:focus-visible .image {
+  transform: scale(1.1) translateY(-4px);
+}
+
+.name {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.2;
+} 

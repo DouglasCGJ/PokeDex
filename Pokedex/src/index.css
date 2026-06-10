@@ -1,0 +1,72 @@
+:root {
+  --color-pokered:       #E3350D;
+  --color-pokered-dark:  #B02A0A;
+  --color-pokered-light: #FF5733;
+  --color-pokeyellow:    #F7C948;
+  --color-pokeblue:      #1A73C8;
+  --color-pokeblue-dark: #134F8A;
+
+  --color-bg:        #F0F0F0;
+  --color-surface:   #FFFFFF;
+  --color-surface-2: #F8F8F8;
+  --color-border:    #DCDCDC;
+  --color-text:      #1A1A2E;
+  --color-muted:     #6B7280;
+
+  --font-display: 'Press Start 2P', monospace;
+  --font-body:    'Nunito', sans-serif;
+
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  40px;
+  --space-2xl: 64px;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-card: 0 4px 0 rgba(0,0,0,0.15), 0 2px 8px rgba(0,0,0,0.10);
+  --shadow-hover: 0 8px 0 rgba(0,0,0,0.15), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
